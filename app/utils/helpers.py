@@ -1,3 +1,6 @@
+import datetime
+
+
 def get_month_name(month: int) -> str:
     month_names = {
         1: "Enero",
@@ -14,3 +17,11 @@ def get_month_name(month: int) -> str:
         12: "Diciembre",
     }
     return month_names.get(month, Exception("Invalid month"))
+
+
+def valide_date(date: str):
+    try:
+        datetime.datetime.strptime(date, '%Y-%m-%d')
+        return True
+    except ValueError:
+        return False
