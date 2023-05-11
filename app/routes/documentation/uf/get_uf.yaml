@@ -1,0 +1,33 @@
+Api documentation for get_uf endpoint
+---
+tags:
+  - UF API
+get:
+  parameters:
+    - in: path
+      name: date
+      description: "Date to retrieve UF value in dd-mm-yyyy format"
+      type: string
+      required: true
+responses:
+  200:
+    description: "Success response"
+    schema:
+      type: "object"
+      properties:
+        uf_value:
+          type: "string"
+  400:
+    description: "Bad request"
+    schema:
+      type: "object"
+      properties:
+        error:
+          type: "string"
+  404:
+    description: "Not found"
+    schema:
+      type: "object"
+      properties:
+        error:
+          type: "string"
