@@ -21,7 +21,10 @@ def get_month_name(month: int) -> str:
 
 def valide_date(date: str):
     try:
-        datetime.datetime.strptime(date, '%Y-%m-%d')
+        date = datetime.datetime.strptime(date, '%d-%m-%Y')
+        today = datetime.datetime.today()
+        if date > today or date.year < 2013:
+            return False
         return True
     except ValueError:
         return False

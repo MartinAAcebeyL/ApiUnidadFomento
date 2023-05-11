@@ -32,24 +32,3 @@ def bad_request(message):
         }
     ), 400
 
-
-def token_time_out():
-    return jsonify(
-        {
-            'succses': False,
-            'data': {},
-            'message': "El token expiro",
-            'code': 400
-        }
-    ), 400
-
-
-def token_error():
-    return jsonify(
-        {
-            'succses': False,
-            'data': {},
-            'message': "Error en la validacion del token",
-            'code': 400
-        }
-    ), 400

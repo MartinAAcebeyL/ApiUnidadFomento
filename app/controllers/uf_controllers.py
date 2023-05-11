@@ -2,14 +2,15 @@ import requests
 from bs4 import BeautifulSoup
 from app.utils.helpers import get_month_name, valide_date
 
+
 UF_URL = 'https://www.sii.cl/valores_y_fechas/uf/uf{}.htm'
 
 
 def get_uf_value(date_str: str) -> str:
     if not valide_date(date_str):
         raise Exception("Invalid date")
-    
-    year, month, day = date_str.split("-")
+
+    day, month, year = date_str.split("-")
     month = get_month_name(int(month)).lower()
     day = int(day)
 
