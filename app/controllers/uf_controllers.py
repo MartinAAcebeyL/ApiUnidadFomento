@@ -23,6 +23,6 @@ def get_uf_value(date_str: str) -> str:
     div = soup.find('div', {'id': f'mes_{month}'})
 
     table = div.find('table')
-    th = table.find('th', text=str(day))
+    th = table.find('th', string=str(day))
     td = th.find_next_sibling('td')
     return td.text
