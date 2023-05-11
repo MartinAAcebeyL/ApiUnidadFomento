@@ -24,7 +24,7 @@ def valide_date(date: str):
         date = datetime.datetime.strptime(date, '%d-%m-%Y')
         today = datetime.datetime.today()
         if date > today or date.year < 2013:
-            return False
+            raise Exception("Date out of range")
         return True
     except ValueError:
         return False
