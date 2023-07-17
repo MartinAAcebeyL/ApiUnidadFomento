@@ -11,7 +11,12 @@ class Test(BaseConfig):
     TEST = True
 
 
+class Deploy(BaseConfig):
+    DEBUG = False
+    HOST = '0.0.0.0'
+
 config ={
     'develop': Develop,
     'test': Test,
+    'deploy': Deploy
 }

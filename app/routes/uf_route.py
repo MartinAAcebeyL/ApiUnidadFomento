@@ -15,3 +15,4 @@ def get_uf(date: str):
         if e.args[0] == "Date out of range":
             return not_found(e.args[0])
         return bad_request(e.args[0])
+    
