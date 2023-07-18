@@ -57,6 +57,3 @@ Para obtener un reporte de cobertura de las pruebas, asegúrate de estar dentro 
 Para ver la documentación de la API, asegúrate de estar dentro del entorno virtual y en la raíz del proyecto, y luego ejecuta la aplicación y visita la siguiente URL en tu navegador:
 
 http://localhost:5000/apidocs/
-
-## URL del proyecto desplegado
-Pronto

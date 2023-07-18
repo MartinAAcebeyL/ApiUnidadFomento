@@ -96,7 +96,7 @@ HTML = """
     <p>⭐ If you like it leave me a little star on my github please ⭐</p>
     <p><a href="https://github.com/MartinAAcebeyL/ApiUnidadFomento" target="_blank">Documentation/repository</a></p>
     <p>Author: Martín Acebey L.</p>
-    <p><a href="https://www.linkedin.com/in/martinacebeyl/" target="_blank">LinkedIn</a></p>
+    <p><a href="https://www.linkedin.com/in/martin-acebey-l/" target="_blank">LinkedIn</a></p>
 </body>
 </html>
 """
